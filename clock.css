@@ -1,0 +1,59 @@
+/* Ez a betűtípus jobban tetszett nekem mint a másik remélem nem gond hogy ezt használtam */
+
+@font-face {
+    font-family:"Digital";
+    src:url("fontstyle/DIGITALDREAM.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(img/photo-1553095066-5014bc7b7f2d.jpg);
+    background-size: 100%;
+}
+.Header {
+    background-color: darkblue;
+    text-align: center;
+    padding: 12px;
+
+}
+#hungary {
+font-size: 40px;
+font-family: cursive;
+color:white;
+
+}
+.Container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    animation: fadeIn 4s;
+    -webkit-animation: fadeIn 4s;
+}
+/* Megpróbáltam játszani a fényekkel de még egy színpadi világítást nem mernék bevállalni :,D */
+
+.Digital__clock {
+    font-family: Digital;
+    font-size: 95px;
+    color:wheat;
+    box-shadow: 15px 20px 40px;
+    background: black;
+    border-radius: 10px;
+}
+
+/* Egy kis animáció hogy ne legyen unalmas :D */
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
